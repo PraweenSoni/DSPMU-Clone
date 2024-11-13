@@ -35,10 +35,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px 100px;
 }
 .navlinks ul {
     display: flex;
     list-style: none;
+    z-index: 99;
 }
 .navlinks ul li{
     margin: 0 20px;
@@ -70,18 +72,28 @@ nav{
 }
 
 .swiper{
-    height: 350px;
+    height: 400px;
     width: 100vw;
     /* z-index: -1; */
+}
+
+.swiper-slide img{
+  max-width: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%;
+  min-height: 450px;
+  max-height: 450px;
+  object-fit: cover;
 }
 .features{
     display: flex;
     justify-content: space-between;
-    margin: -50px 100px 10px 100px;
+    margin: -100px 100px 10px 100px;
     border-radius: 7px;
     padding: 10px;
     z-index: 999;
-    /* position: absolute; */
+    position: relative;
     background-color: var(--bg-white);
 }
 .features .card{
@@ -131,17 +143,88 @@ main .marquee .toppest a{
 }
 .aboutus-mdiv{
     display: flex;
+    justify-content: space-between;
 }
 .aboutus .aboutus-div{
-    width: 550px;
-    height: 300px;
-    border: 2px solid black;
+    width: 580px;
+    height: 400px;
+    /* border: 2px solid black; */
     padding: 10px;
+    overflow: hidden;
 }
 .aboutus .fontbig{
     font-size: 40px;
     font-weight: 600;
 }
+.aboutus .aboutus-div ul {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+.aboutus .aboutus-div ul li{
+    color: var(--color-dark);
+    transition: .3s;
+    cursor: pointer;
+}
+.aboutus .aboutus-div ul li.active{
+    color: var(--color-secondary);
+}
+
+.aboutus .aboutus-div ul .line{
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    transition: all .3s ease-in-out;
+}
+
+.aboutus .aboutus-div ul li::after{
+    content: "";
+    margin: 0 20px;
+    border-right: 2px solid var(--dwhite);
+}
+.aboutus-div .content_box .content, .aboutus-div .content_box .content2{
+    display: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 22px;
+    font-weight: 500;
+    animation: moving .7s ease;
+}
+.aboutus .aboutus-div .content .list{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.aboutus .aboutus-div .content p{
+    color: var(--color-textSecondary);
+}
+.aboutus .aboutus-div .content span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 15px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    background-color: var(--color-primary);
+    color: var(--white);
+    margin-right: 10px;
+}
+@keyframes moving {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+.aboutus-div .content_box .content.active, .aboutus-div .content_box .content2.active2{
+    display: block;
+}
+
 .aboutus .form-div{
     display: flex;
     justify-content: space-evenly;
@@ -194,7 +277,87 @@ main .marquee .toppest a{
     width: 80px;
     margin: 60px 0 40px 0;
     border-radius: 50%;
+    position: relative;
     background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-sec .play i{
+    color: var(--bg-white);
+    font-size: 40px;
+    position: relative;
+}
+
+.video-sec .play::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.3);
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+}
+.video-sec .play::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.3);
+    -webkit-animation: 2s ripple 1s linear infinite;
+    animation: 2s ripple 1s linear infinite;
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    75% {
+        -webkit-transform: scale(1.75);
+        transform: scale(1.75);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    75% {
+        -webkit-transform: scale(1.75);
+        transform: scale(1.75);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
 }
 .video-sec .vtext{
     font-size: 40px;
@@ -202,13 +365,13 @@ main .marquee .toppest a{
     color: var(--white);
 }
 .video-sec button{
-    width: 130px;
+    width: 150px;
     height: 50px;
     color: var(--white);
     background-color: var(--color-textSecondary);
     font-size: 18px;
     border-radius: 5px;
-    outline: none;
+    border: none;
 }
 .contact{
     position: relative;
@@ -298,6 +461,4 @@ footer .links{
 .links:hover{
     color: var(--color-primary);
 }
-nav{
-    margin: 20px 100px;
-}
+
