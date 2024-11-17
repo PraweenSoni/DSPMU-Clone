@@ -1,0 +1,144 @@
+:root {
+    --color-primary: #1ab69d;
+    --color-secondary: #ee4a62;
+    --color-textSecondary: #ff5b5c;
+    --color-tertiary: #f8b81f;
+    --color-dark: #111212;
+    --white: #fff;
+    --bg-white: #eceef0;
+    --dwhite: #aeaeae;
+    --clr-light: #fafafa;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+.ptitle, .pdetail .pmessage .pmess{
+    color: var(--color-secondary);
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 3px solid var(--color-secondary);
+    margin-bottom: 20px;
+}
+.pname{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid var(--dwhite);
+    background-color: var(--bg-white);
+}
+.pname span{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.pname p{
+    font-weight: 300;
+}
+.pdetail{
+    border: 1px solid var(--dwhite);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+.pdetail .profile{
+    display: flex;
+}
+.pdetail .profile .pic{
+    border-radius: 7px;
+    border: 1px solid var(--dwhite);
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.pdetail .profile .pic img{
+    height: 100%;
+    width: 100%;
+}
+.pdetail .profile .info{
+    width: 700px;
+    height: 200px;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.pdetail .profile .info .poname{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 18px;
+}
+.pdetail .pmessage .pmess{
+    font-size: 18px;
+}
+.pdetail .pmessage .pstart{
+    font-weight: 700;
+    margin: 30px 0 30px 20px;
+}
+.pdetail .pmessage .pmain, .pdetail .pmessage span{
+    margin: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 30px;
+}
+.pdetail .pmessage span{
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--color-primary);
+}
+.pdetail .pmessage .pcontact{
+    margin: 40px 0 20px 20px;
+    line-height: 30px;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid var(--dwhite);
+} 
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: var(--bg-white);
+}
+table thead tr{
+    background-color: #ee4a63eb;
+    color: var(--white);
+}
+table tbody tr{
+    transition: all .3s ease;
+}
+table tbody tr:hover{
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+table tbody tr img{
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 200px;
+    border: 1px solid var(--dwhite);
+    border-radius: 4px;
+    padding: 5px;
+}
+table tbody tr td{
+    vertical-align: top;
+}

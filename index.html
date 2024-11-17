@@ -9,131 +9,187 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><img src="imgs/fullsizelogo.png" alt="DSPMU Fullsize logo"></div>
-        <div class="navlinks">
-            <ul>
-                <li><a href="#" class="links">Home</a></li>
-                <li class="droupdown">
-                    <a href="#">About Us</a>
-                    <ul class="submenu">
-                        <li><a href="">About University</a> </li>
-                        <li><a href="">Our Mission</a></li>
-                        <li><a href="">Our Vision</a></li>
-                        <li><a href="">Achievements</a> </li>
-                    </ul>
-                <li class="droupdown">
-                    <a href="#">Administration</a>
-                    <ul class="submenu">
-                        <li><a href="">Vice-Chancellor Office</a></li>
-                        <li><a href="">Examination Section</a></li>
-                        <li><a href="">Registrar Office</a></li>
-                        <li class="droupdown">
-                            <a tabindex="0">Training & Placement Cell</a>
-                            <ul class="submenu">
-                                <li><a href="">Recruitment Results</a></li>
-                                <li><a href="">Internship</a></li>
-                                <li><a href="">Recruiters</a></li>
-                                <li><a href="">Placement Team/ Contact</a></li>
-                                <li><a href="">Photo Gallery</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="">List of Officials and Faculty Members</a></li>
-                    </ul>
+    <header>
+        <div class="container">
+          <input type="checkbox" name="check" id="check">
+          <div class="logo-container">
+            <img src="imgs/fullsizelogo.png" alt="DSPMU Fullsize logo">
+          </div>
+    
+          <div class="nav-btn">
+            <div class="nav-links">
+              <ul>
+                <li class="nav-link" style="--i: .6s">
+                  <a href="#">Home</a>
                 </li>
-                <li class="droupdown">
-                    <a href="#">Departments</a>
-                    <ul class="submenu">
-                        <li class="droupdown">
-                            <a tabindex="0">Humanities</a>
-                            <ul class="submenu">
-                                <li><a href="">English</a></li>
-                                <li><a href="">Hindi</a></li>
-                            </ul>
-                        </li>
-                        <li class="droupdown">
-                            <a tabindex="0">Science</a>
-                            <ul class="submenu">
-                                <li><a href="">Mathematics</a></li>
-                                <li><a href="">Physics</a></li>
-                            </ul>
-                        </li>
-                        <li class="droupdown">
-                            <a tabindex="0">Vocational</a>
-                            <ul class="submenu">
-                                <li><a href="">B.Sc. Computer Application</a></li>
-                                <li><a href="">B.Sc. Information Technology</a></li>
-                                <li><a href="">Electronics</a></li>
-                                <li><a href="">School of Environmental Science</a></li>
-                                <li><a href="">B.Sc. Nano Science & Nano Technology</a></li>
-                                <li><a href="">Master of Computer Application(MCA)</a></li>
-                                <li><a href="">M.Sc. Information Technology</a></li>
-                            </ul>
-                        </li>
+                <li class="nav-link" style="--i: 1.1s">
+                  <a href="#">Departments</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">Vocational<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown second">
+                          <ul>
+                            <li class="dropdown-link">
+                              <a href="#">B.Sc. Computer Application</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="#">B.Sc. Information Technology</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="#">Master of Computer Application(MCA)</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="#">M.Sc. Information Technology</a>
+                            </li>
+                            <div class="arrow"></div>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Science<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown second">
+                          <ul>
+                            <li class="dropdown-link">
+                              <a href="#">Mathematics</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="#">Physics</a>
+                            </li>
+                            <div class="arrow"></div>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Humanities<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown second">
+                          <ul>
+                            <li class="dropdown-link">
+                              <a href="#">English</a>
+                            </li>
+                            <li class="dropdown-link">
+                              <a href="#">Hindi</a>
+                            </li>
+                            <div class="arrow"></div>
+                          </ul>
+                        </div>
+                      </li>
+                      <div class="arrow"></div>
                     </ul>
+                  </div>
                 </li>
-                <li class="droupdown">
-                    <a href="#">Facilities</a>
-                    <ul class="submenu">
-                        <li class="droupdown">
-                            <a href="#">E-Library</a>
-                            <ul class="submenu">
-                                <li><a target="_blank" href="">Students</a></li>
-                                <li><a target="_blank" href="">Faculties</a></li>
-                                <li><a href="">Help</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><i class="fa fa-hotel"></i>Hostels</a> </li>
-                        <li><a href="#"><i class="fa fa-book"></i>Canteen</a></li>
-                        <li><a href="#"><i class="fa fa-wifi"></i>Wi-Fi Campus</a> </li>
+                <li class="nav-link" style="--i: 1.1s">
+                  <a href="#">Facilities</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">Hostels</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Canteen</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Wi-Fi Campus</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Medical Clinic</a>
+                      </li>
+                      <div class="arrow"></div>
                     </ul>
+                  </div>
                 </li>
-                <li class="droupdown">
-                    <a href="#">Student Corner</a>
-                    <ul class="submenu">
-                        <li><a href="">Login/Sign Up</a></li>
-                        <li><a href="">Admissions</a></li>
-                        <li><a href="">Syllabus</a></li>
-                        <li><a href="">Examination Information</a></li>
-                        <li><a href="">Results</a></li>
-                        <li><a href="">Scholarships</a></li>
-                        <li><a href="">Placement Details</a></li>
+                <li class="nav-link" style="--i: 1.1s">
+                  <a href="#">Student Corner</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">Login</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Sign Up</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Admissions</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Syllabus</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Results</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Scholarships</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Placement Details</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Examination Information</a>
+                      </li>
+                      <div class="arrow"></div>
                     </ul>
+                  </div>
                 </li>
+                <li class="nav-link" style="--i: 1.1s">
+                  <a href="#">About Us</a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">About University</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Our Mission</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Our Vision</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Achievements</a>
+                      </li>
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
                 </li>
-            </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+              <div></div>
+            </div>
+          </div>
         </div>
-    </nav>
+    </header>
     <main>
         <section>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-0.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-2.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-3.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-4.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-5.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/swiper/Slider-6.jpg" />
-                  </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-0.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/swiper/Slider-6.jpg" />
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -150,7 +206,9 @@
                     </div>
                 </div>
                 <div>
-                    <p>"The Governor as Chancellor plays a very constructive role in the administration of the Universities. The Chancellor being the Governor can help to"</p><a href="" class="alink">Read More</a>
+                    <p>"The Governor as Chancellor plays a very constructive role in the administration of the
+                        Universities. The Chancellor being the Governor can help to"</p><a href="" class="alink">Read
+                        More</a>
                 </div>
             </div>
             <div class="card">
@@ -161,7 +219,8 @@
                         <span>Vice-Chancellor</span>
                     </div>
                 </div>
-                <p>"Dr. Shyama Prasad Mukherjee University, Ranchi is a synthesis of a legacy of 92 years of hard work, dedication and incomparable team "</p><a href="" class="alink">Read More</a>
+                <p>"Dr. Shyama Prasad Mukherjee University, Ranchi is a synthesis of a legacy of 92 years of hard work,
+                    dedication and incomparable team "</p><a href="" class="alink">Read More</a>
             </div>
             <div class="card">
                 <div class="profile">
@@ -171,25 +230,30 @@
                         <span>DSW</span>
                     </div>
                 </div>
-                <p>"Dr. Shyama Prasad Mukherjee University is one of the premier Institutes of Higher Learning and Research. we have Campus"</p><a href="" class="alink">Read More</a>
+                <p>"Dr. Shyama Prasad Mukherjee University is one of the premier Institutes of Higher Learning and
+                    Research. we have Campus"</p><a href="" class="alink">Read More</a>
             </div>
             <div class="card">
                 <div class="profile">
                     <img src="imgs/registrar.jpg" alt="Registrar Image">
-                    <div>    
+                    <div>
                         <p style="color: #8e56ff;">Dr. (Mrs.) Namita Singh</p>
                         <span>Registrar</span>
                     </div>
                 </div>
-                <p>"Education embedded with information and communication technology paves the robust way for creating a just and equitable society. As to meet out the new expectations"</p><a href="" class="alink">Read More</a>
+                <p>"Education embedded with information and communication technology paves the robust way for creating a
+                    just and equitable society. As to meet out the new expectations"</p><a href="" class="alink">Read
+                    More</a>
             </div>
         </div>
         <section class="aboutus">
             <div class="marquee">
                 <marquee direction="right" scrollamount="3" scrolldelay="65">
                     <ul class="toppest">
-                        <li><img src=""><a href="" title="" class="pcolor" target="_blank">Click to open UG Registration 2024-2028</a></li>
-                        <li><img src=""><a href="" title="" class="pcolor" target="_blank">Click hear to fill form for AMANAT, GIS, MHA,PGDCG, B.Ed and LLM</a></li>
+                        <li><img src=""><a href="" title="" class="pcolor" target="_blank">Click to open UG Registration
+                                2024-2028</a></li>
+                        <li><img src=""><a href="" title="" class="pcolor" target="_blank">Click hear to fill form for
+                                AMANAT, GIS, MHA,PGDCG, B.Ed and LLM</a></li>
                     </ul>
                 </marquee>
             </div>
@@ -200,30 +264,37 @@
                         <li class="tab_btn active">Latest Updates</li>
                         <li class="tab_btn">Examination</li>
                         <li class="tab_btn">Addmission/Merit list </li>
+                        <div class="line"></div>
                     </ul>
                     <div class="content_box">
                         <div class="content active">
                             <div class="list">
-                                <span>13 Nev</span><p>PG Class Start from 21:10:2024</p>
+                                <span>13 Nev</span>
+                                <p>PG Class Start from 21:10:2024</p>
                             </div>
                             <div class="list">
-                                <span>13 Nev</span><p>PG Class Start from 21:10:2024</p>
+                                <span>13 Nev</span>
+                                <p>PG Class Start from 21:10:2024</p>
                             </div>
                             <div class="list">
-                                <span>13 Nev</span><p>PG Class Start from 21:10:2024</p>
+                                <span>13 Nev</span>
+                                <p>PG Class Start from 21:10:2024</p>
                             </div>
                             <div class="list">
-                                <span>13 Nev</span><p>PG Class Start from 21:10:2024</p>
+                                <span>13 Nev</span>
+                                <p>PG Class Start from 21:10:2024</p>
                             </div>
                         </div>
                         <div class="content">
                             <div class="list">
-                                <span>14 Nev</span><p>PG V Examination fee submission</p>
+                                <span>14 Nev</span>
+                                <p>PG V Examination fee submission</p>
                             </div>
                         </div>
                         <div class="content">
                             <div class="list">
-                                <span>15 Nev</span><p>Addmission Form fill from 21:10:2012</p>
+                                <span>15 Nev</span>
+                                <p>Addmission Form fill from 21:10:2012</p>
                             </div>
                         </div>
                     </div>
@@ -231,35 +302,51 @@
                 <div class="aboutus-div">
                     <p class="fontbig">About Us</p>
                     <ul>
-                        <li class="tab_btn2 active">About University</li>
+                        <li class="tab_btn2 active2">About University</li>
                         <li class="tab_btn2">Our Mission</li>
                         <li class="tab_btn2">Our Vision</li>
-                        <div class="line"></div>
+                        <div class="line2"></div>
                     </ul>
                     <div class="content_box">
-                            <div class="content2 active2">
-                                <p>
-                                    Situated on the tropic of cancer, at an altitude of 651m from sea level amidst tropical flora and fauna, Ranchi College, Ranchi (now upgraded as a Unitary State University and known as Dr. Shyama Prasad Mukherjee University, Ranchi) had been established during the Pre- Independent India. Established in 1926 as a Government Intermediate College, it marched ahead and began Under-Graduate and post–graduate Courses in various subjects of Arts/Science in the year 1946. <br>
-                                    Even after Independence, Ranchi College continued to celebrate its recognition as Government College.
-                                    Till the creation of Ranchi University, Ranchi on 12th July, 1960, it functioned as a Unit of Patna University, imparting quality Higher Education in faculties of Humanities, Science and Social Science
-                                </p>
-                            </div>
-                            <div class="content2">
-                                <p>
-                                    The University Grants Commission (UGC) has recognized Ranchi College, Ranchi as ‘College with Potential for Excellence’. The college aims at: <br>
-                                    Activating thirst of learning among students.  <br>
-                                    Benefitting students from the latest advances of education. <br>
-                                    Creating an institutional environment where the creativity of all individuals can thrive. <br>
-                                    Developing the intellectual, moral, and practical foundations among students. 
-                                </p>
-                            </div>
-                            <div class="content2">
-                                <p>
-                                    Efforts sans vision never yield desired result. A person without vision only invites sufferings and criticism from all corners. Same is the case with educational institutions. Their success depends highly on vision, determination, perseverance, ambition and discipline of the person at the helm of affairs. <br>
-                                    As the VC of the DSPMU, my thoughts are always about how to build, upgrade and elevate the intellectual, cultural and moral capabilities of the personnel of the college. Here is the vision for the college: <br>
-                                    Academic freedom will be given to all the staff and students to engage into intellectual discourse and critical enquiry without fear and favour.
-                                </p>
-                            </div>
+                        <div class="content2 active2">
+                            <p>
+                                Situated on the tropic of cancer, at an altitude of 651m from sea level amidst tropical
+                                flora and fauna, Ranchi College, Ranchi (now upgraded as a Unitary State University and
+                                known as Dr. Shyama Prasad Mukherjee University, Ranchi) had been established during the
+                                Pre- Independent India. Established in 1926 as a Government Intermediate College, it
+                                marched ahead and began Under-Graduate and post–graduate Courses in various subjects of
+                                Arts/Science in the year 1946. <br>
+                                Even after Independence, Ranchi College continued to celebrate its recognition as
+                                Government College.
+                                Till the creation of Ranchi University, Ranchi on 12th July, 1960, it functioned as a
+                                Unit of Patna University, imparting quality Higher Education in faculties of Humanities,
+                                Science and Social Science
+                            </p>
+                        </div>
+                        <div class="content2">
+                            <p>
+                                The University Grants Commission (UGC) has recognized Ranchi College, Ranchi as ‘College
+                                with Potential for Excellence’. The college aims at: <br>
+                                Activating thirst of learning among students. <br>
+                                Benefitting students from the latest advances of education. <br>
+                                Creating an institutional environment where the creativity of all individuals can
+                                thrive. <br>
+                                Developing the intellectual, moral, and practical foundations among students.
+                            </p>
+                        </div>
+                        <div class="content2">
+                            <p>
+                                Efforts sans vision never yield desired result. A person without vision only invites
+                                sufferings and criticism from all corners. Same is the case with educational
+                                institutions. Their success depends highly on vision, determination, perseverance,
+                                ambition and discipline of the person at the helm of affairs. <br>
+                                As the VC of the DSPMU, my thoughts are always about how to build, upgrade and elevate
+                                the intellectual, cultural and moral capabilities of the personnel of the college. Here
+                                is the vision for the college: <br>
+                                Academic freedom will be given to all the staff and students to engage into intellectual
+                                discourse and critical enquiry without fear and favour.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,10 +371,11 @@
         </section>
         <section class="video-sec">
             <div class="play">
-                <i class="bi bi-play-fill"></i>
+              <i class="fa-solid fa-play"></i>
             </div>
-            <p class="vtext">Take a Video Tour to Learn Intro of <br> Dr. Shyama Prasad Mukherjee University with "कुल-गीत" </p>
-            <button>Watch More</button>
+            <p class="vtext">Take a Video Tour to Learn Intro of <br> Dr. Shyama Prasad Mukherjee University with
+                "कुल-गीत" </p>
+            <button>Watch More <i class="fa-brands fa-youtube"></i></button>
         </section>
         <div class="contact">
             <div class="contactbox">
@@ -360,69 +448,84 @@
                     <li class="text-w">Call :&nbsp;<a class="links" href="tel:+000">+91 0000000000</a></li>
                     <li class="text-w">Email :&nbsp;<a class="links" href="mailto:ask.psoni@gmail.com">ask.psoni@gmail.com</a></li>
                     <li>
-                        <div class="ficons"></div>
+                        <div class="ficons">
+                          <a href="https://www.facebook.com/praween.praweensoni" target="_blank">
+                            <i class="fa-brands fa-facebook-f" style="color: #0866ff;"></i>
+                          </a>
+                          <a href="https://www.instagram.com/praween_123_pks/" target="_blank">
+                            <i class="fa-brands fa-instagram" style="color: #fd06ba;"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/praweensoni/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in" style="color: #0a66c2;"></i>
+                          </a>
+                          <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+                          </a>
+                          <a href="https://github.com/praweensoni01" target="_blank">
+                            <i class="fa-brands fa-github" style="color: white;"></i>
+                          </a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <hr>
-        <div class="fdown text-w">Copyright 2024 <a href="" class="pcolor">Dr. Shyama Prasad Mukherjee University
-                Clone</a> Designed By <a href="" class="pcolor">PS</a></div>
+        <div class="fdown text-w">Copyright 2024 <a href="" class="pcolor">Dr. Shyama Prasad Mukherjee University Clone</a> Cloned By <a href="https://www.instagram.com/praween_123_pks/" target="_blank" class="pcolor">PS</a></div>
     </footer>
 
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
 
-    const tabs = document.querySelectorAll('.tab_btn');
-    const all_content = document.querySelectorAll('.content');
-    tabs.forEach((tab, index)=>{
-        console.log(tab);
-        console.log(index);
-        tab.addEventListener('click', (e)=>{
-            tabs.forEach(tab=>{tab.classList.remove('active')});
-            tab.classList.add('active');
+        const tabs = document.querySelectorAll('.tab_btn');
+        const all_content = document.querySelectorAll('.content');
+        tabs.forEach((tab, index) => {
+            console.log(tab);
+            console.log(index);
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab => { tab.classList.remove('active') });
+                tab.classList.add('active');
 
-            // var line = document.querySelector('.line');
-            // line.style.width = e.target.offsetWidth + "px";
-            // line.style.left = e.target.offsetLeft + "px";
+                var line = document.querySelector('.line');
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
 
-            all_content.forEach(content=>{content.classList.remove('active')}); 
-            all_content[index].classList.add('active');
+                all_content.forEach(content => { content.classList.remove('active') });
+                all_content[index].classList.add('active');
+            })
         })
-    })
-    const tabs2 = document.querySelectorAll('.tab_btn2');
-    const all_content2 = document.querySelectorAll('.content2');
-    tabs2.forEach((tab2, index2)=>{
-        console.log(tab2);
-        console.log(index2);
-        tab2.addEventListener('click', (e)=>{
-            tabs2.forEach(tab2=>{tab2.classList.remove('active2')});
-            tab2.classList.add('active2');
+        const tabs2 = document.querySelectorAll('.tab_btn2');
+        const all_content2 = document.querySelectorAll('.content2');
+        tabs2.forEach((tab2, index2) => {
+            console.log(tab2);
+            console.log(index2);
+            tab2.addEventListener('click', (e) => {
+                tabs2.forEach(tab2 => { tab2.classList.remove('active2') });
+                tab2.classList.add('active2');
 
-            var line = document.querySelector('.line');
-            line.style.width = e.target.offsetWidth + "px";
-            line.style.left = e.target.offsetLeft + "px";
+                var line2 = document.querySelector('.line2');
+                line2.style.width = e.target.offsetWidth + "px";
+                line2.style.left = e.target.offsetLeft + "px";
 
-            all_content2.forEach(content2=>{content2.classList.remove('active2')}); 
-            all_content2[index2].classList.add('active2');
+                all_content2.forEach(content2 => { content2.classList.remove('active2') });
+                all_content2[index2].classList.add('active2');
+            })
         })
-    })
-  </script>
+    </script>
 </body>
 
 </html>
