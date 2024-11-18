@@ -142,3 +142,37 @@ table tbody tr img{
 table tbody tr td{
     vertical-align: top;
 }
+
+.fdetail{
+    border: 1px solid var(--dwhite);
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+.fdetail .fpic{
+    height: 100px;
+    width: 100px;
+    border-radius: 500%;
+    border: 1px solid var(--dwhite);
+    overflow: hidden;
+    padding: 5px;
+    margin-right: 50px;
+}
+.fdetail .fpic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fdetail .faculty_detail{
+    margin-right: 50px;
+}
+.fdetail .faculty_detail .fname{
+    line-height: 25px;
+}
+.fdetail .faculty_detail .fname span{
+    color: var(--color-primary);
+    font-size: 22px;
+    font-weight: 600;
+}
