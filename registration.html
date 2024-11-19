@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <img src="imgs/logopng.png" alt="logo">
+        <div class="form">
+            <div class="formbox">
+                <p style="font-size: 20px; color: var(--color-primary);">Registration Account Creation Steps.</p>
+                <div class="instru">
+                    <p>Case-I
+                        Not yet registered with DSPMU or migrated from DSPMU--In that Case the Student should click on "Create new account" (Blue text). <br>
+                        Case-II
+                        Partially / Fully filled up Registration application with DSPMU - In that Case the Student should fill up the User Name & Password: <br>                        
+                        A)After completing filling up the application form and generating login id and password, the applicant should check his/her email id for getting their unique "Application no", "Password" and "OTP". Please never share your credentials with anyone. <br>                        
+                        B) Now, put the application no, password and OTP to get the "Duly Filled-Up Registration Application Form". <br>                        
+                        C) Take a printout of it and submit it to keep it as necessary document. <br>                        
+                        D) An applicant can login into the system by clicking on “Registration Login" using this "Application no" as id and "password" as emailed to him/her. <br>                        
+                        E) A student can login to check his/her account through "Student Login" by entering the “Registration Number" and "Password" which will generate by Admin and emailed to his/her email id. </p>
+                </div>
+                <div class="instuButton">
+                    <div>
+                        <button>More Instruction</button>
+                        <button>How to Apply</button>
+                    </div>
+                    <a class="helpBtn" href="mailto:ask.psoni@gmail.com">ask.psoni@gmail.com</a>
+                </div>
+            </div>
+            <div class="formbox">
+                <h3 style="margin-bottom: 5px;  color: var(--color-primary);">Registration login</h3>
+                <form action="#">
+                    <label for="regis_no">Chancellor Reg.No</label>
+                    <input type="number" id="regis_no">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                    <label for="pass">Password</label>
+                    <input type="text" id="pass">
+                    <div class="instuButton">
+                        <div>
+                        <button class="login">Login</button>
+                        <button class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,91 @@
+:root {
+    --color-primary: #1ab69d;
+    --color-secondary: #ee4a62;
+    --color-textSecondary: #ff5b5c;
+    --color-tertiary: #f8b81f;
+    --color-dark: #111212;
+    --white: #fff;
+    --bg-white: #eceef0;
+    --dwhite: #aeaeae;
+    --clr-light: #fafafa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imgs/registration_login.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container img{
+    height: 120px;
+    width: 120px;
+    margin-top: 15px;
+}
+.container .form{
+    margin-top: 20px;
+    border: 2px solid var(--dwhite);
+    background-color: var(--white);
+    width: 1000px;
+    height: 430px;
+    padding: 40px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .form .formbox{
+    width: 430px;
+}
+.container .form .formbox .instru{
+    height: 230px;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.container .form .formbox .instuButton{
+    width: 100%;
+    height: 100px;
+}
+.container .form .formbox .instuButton div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.container .form .formbox .instuButton button, .container .form .formbox .helpBtn{
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: var(--color-textSecondary);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+}
+.container .form .formbox .helpBtn{
+    background-color: var(--color-primary);
+    margin-left: 130px;
+    height: 40px;
+    display: inline-block;
+    width: 170px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.container .form .formbox form{
+    width: 400px;
+}
+.container .form .formbox form input{
+    width: 375px;
+    border: 2px solid var(--color-secondary);
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
