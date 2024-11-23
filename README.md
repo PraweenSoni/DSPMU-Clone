@@ -7,11 +7,12 @@
 
 # Screenshots --
 <p>
-<img src="https://github.com/user-attachments/assets/e9456b0b-3489-46df-805f-4670085a52fd" heigth="380" width="600" margin-left="20px">
+<img src="https://github.com/user-attachments/assets/e9456b0b-3489-46df-805f-4670085a52fd" width="100%" style="border: 4px solid #1ab69d;">
 <!-- ![dspmuclone](https://github.com/user-attachments/assets/e9456b0b-3489-46df-805f-4670085a52fd) -->
 </p>
 
 # Note
+  - Only Frontend part covered
   - This repository is still under development and I will continue to add more features to it.
 # Upcoming Features
   -  Adding Backend
