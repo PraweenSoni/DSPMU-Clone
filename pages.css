@@ -176,3 +176,10 @@ table tbody tr td{
     font-size: 22px;
     font-weight: 600;
 }
+
+.paragraph{
+    margin-left: 40px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 28px;
+}
