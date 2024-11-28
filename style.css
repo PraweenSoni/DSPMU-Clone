@@ -436,11 +436,13 @@ header .dropdown ul {
   min-height: 450px;
   max-height: 450px;
   object-fit: cover;
+  transition: transform 4s linear;
 }
+
 .features {
   display: flex;
   justify-content: space-between;
-  margin: -100px 100px 10px 100px;
+  margin: -120px 100px 10px 100px;
   border-radius: 7px;
   padding: 10px;
   z-index: 999;
@@ -604,7 +606,8 @@ main .marquee .toppest a {
 }
 .aboutus .form-box .num {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .video-sec {
