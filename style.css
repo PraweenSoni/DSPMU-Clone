@@ -68,6 +68,22 @@ header .container .logo-container {
   display: flex;
   align-items: center;
   margin-left: 60px;
+  /* border: 2px solid black; */
+}
+header .container .logo-container img{
+  height: 60px;
+}
+
+header .container .logo-container div p:nth-child(1){
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+header .container .logo-container div p:nth-child(2){
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .nav-btn {
@@ -866,8 +882,9 @@ footer .fup .fup-box p {
 
 footer .fup .fup-box ul .footerlogo{
   display: flex;
+  line-height: 22px;
   height: 80px;
-  width: 360px;
+  width: 380px;
 }
 footer .fup .fup-box ul .footerlogo img{
   height: 70px;
@@ -875,7 +892,7 @@ footer .fup .fup-box ul .footerlogo img{
 footer .fup .fup-box ul .footerlogo div p:nth-child(1){
   color: var(--white);
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 14px;
   margin-bottom: 0;
 }
 footer .fup .fup-box ul .footerlogo div p:nth-child(2){
