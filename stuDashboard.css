@@ -90,11 +90,17 @@
 .container .stuDetail .stu_img_sign{
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 50px;
+    margin: 10px 0 0 50px;
 }
 .container .stuDetail .stu_img_sign img{
     border: 2px solid var(--dwhite);
-    border-radius: 5px;
+    border-radius: 4px;
     height: 150px;
     width: 170px;
+}
+.container .stuDetail .stu_img_sign img:nth-child(2){
+    position: relative;
+    z-index: 99;
+    bottom: 40px;
+    background: white;
 }
